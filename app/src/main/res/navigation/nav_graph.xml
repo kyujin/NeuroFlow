@@ -3,7 +3,18 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/nav_graph"
-            app:startDestination="@id/userFragment">
+            app:startDestination="@id/buttonFragment">
+
+    <fragment android:id="@+id/buttonFragment"
+              android:name="com.example.neuroflow.ButtonFragment"
+              android:label="ButtonFragment"
+              tools:layout="@layout/button_fragment">
+        <action
+                android:id="@+id/next_action"
+                app:destination="@id/userFragment">
+        </action>
+    </fragment>
+
 
     <fragment android:id="@+id/userFragment"
               android:name="com.example.neuroflow.UserFragment"
