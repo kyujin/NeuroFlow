@@ -3,6 +3,7 @@ package com.example.neuroflow.data
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
@@ -22,4 +23,7 @@ interface UserDAO {
 
     @Query("SELECT * FROM user_table WHERE isFemale = 1 ORDER BY time ASC")
     fun getFemaleUsers(): LiveData<List<User>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertAll(users: List<User>)
 }

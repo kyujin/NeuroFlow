@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import com.example.neuroflow.ui.UserFragment
 
 @Database(entities = [User::class], version = 1)
 abstract class UserDatabase : RoomDatabase() {
