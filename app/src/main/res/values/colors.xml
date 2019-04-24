@@ -5,4 +5,7 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="text_orange">#ea931e</color>
+    <color name="pink_female">#FFC0CB</color>
+    <color name="blue_male">#87ceeb</color>
+
 </resources>

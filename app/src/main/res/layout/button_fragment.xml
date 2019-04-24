@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/black"
         android:paddingLeft="16dp"
-        tools:context=".ButtonFragment">
+        tools:context=".ui.ButtonFragment">
 
     <include layout="@layout/content_textview"/>
 

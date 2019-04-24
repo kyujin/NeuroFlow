@@ -5,7 +5,7 @@
     <data>
         <variable
                 name="viewmodel"
-                type="com.example.neuroflow.data.UserViewModel"/>
+                type="com.example.neuroflow.viewmodel.UserViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,7 +13,7 @@
             android:layout_height="match_parent"
             android:paddingLeft="16dp"
             android:background="@android:color/black"
-            tools:context=".UserFragment">
+            tools:context=".ui.UserFragment">
 
         <TextView
                 android:id="@+id/name_label"

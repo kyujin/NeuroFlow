@@ -3,12 +3,12 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/nav_graph"
-            app:startDestination="@id/buttonFragment">
+            app:startDestination="@id/userListFragment">
 
-    <fragment android:id="@+id/buttonFragment"
-              android:name="com.example.neuroflow.ButtonFragment"
-              android:label="ButtonFragment"
-              tools:layout="@layout/button_fragment">
+    <fragment android:id="@+id/userListFragment"
+              android:name="com.example.neuroflow.ui.UserListFragment"
+              android:label="UserListFragment"
+              tools:layout="@layout/list_fragment">
         <action
                 android:id="@+id/next_action"
                 app:destination="@id/userFragment">
@@ -17,7 +17,11 @@
 
 
     <fragment android:id="@+id/userFragment"
-              android:name="com.example.neuroflow.UserFragment"
+              android:name="com.example.neuroflow.ui.UserFragment"
               android:label="UserFragment"
-              tools:layout="@layout/user_fragment"/>
+              tools:layout="@layout/user_fragment">
+        <argument
+                android:name="userId"
+                app:argType="integer" />
+    </fragment>
 </navigation>
